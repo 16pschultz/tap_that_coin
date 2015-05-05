@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "PennyVC.h"
+#import "InfoPage.h"
 
 @interface ViewController ()
 
@@ -16,12 +18,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    NSURL *buttonUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Coin Sound" ofType:@"mp3"]];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)buttonUrl, &SoundID);
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)launchPennyButton {
+    
+    AudioServicesPlaySystemSound(SoundID);
+    
+    PennyVC *pennyVC = [[PennyVC alloc] init];
+    [self presentViewController:pennyVC animated:YES completion:NULL];
+    
+}
+
+
+
 
 @end
