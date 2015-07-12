@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		D012DD521AF26816000C20DE /* myBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = D012DD511AF26816000C20DE /* myBackground.png */; };
+		D0196D0E1B03C37D00B636B2 /* arrow1.png in Resources */ = {isa = PBXBuildFile; fileRef = D0196D0C1B03C37D00B636B2 /* arrow1.png */; };
+		D0196D0F1B03C37D00B636B2 /* arrow2.png in Resources */ = {isa = PBXBuildFile; fileRef = D0196D0D1B03C37D00B636B2 /* arrow2.png */; };
+		D0196D121B03C43C00B636B2 /* arrow1.5.png in Resources */ = {isa = PBXBuildFile; fileRef = D0196D101B03C43C00B636B2 /* arrow1.5.png */; };
+		D0196D131B03C43C00B636B2 /* arrow2.5.png in Resources */ = {isa = PBXBuildFile; fileRef = D0196D111B03C43C00B636B2 /* arrow2.5.png */; };
 		D01C747E1AF4495200EDEDCF /* pointingHand1.png in Resources */ = {isa = PBXBuildFile; fileRef = D01C747D1AF4495200EDEDCF /* pointingHand1.png */; };
 		D01C74801AF4495C00EDEDCF /* pointingHand2.png in Resources */ = {isa = PBXBuildFile; fileRef = D01C747F1AF4495C00EDEDCF /* pointingHand2.png */; };
 		D02E3E2E1AF0324400AC90CE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D02E3E2D1AF0324400AC90CE /* AudioToolbox.framework */; };
@@ -16,8 +20,6 @@
 		D02E3E361AF03A9300AC90CE /* QuarterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D02E3E341AF03A9300AC90CE /* QuarterVC.xib */; };
 		D02E3E3B1AF040FD00AC90CE /* HalfDollarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D02E3E391AF040FD00AC90CE /* HalfDollarVC.m */; };
 		D02E3E3C1AF040FD00AC90CE /* HalfDollarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D02E3E3A1AF040FD00AC90CE /* HalfDollarVC.xib */; };
-		D02E3E411AF0549300AC90CE /* InfoPage.m in Sources */ = {isa = PBXBuildFile; fileRef = D02E3E3F1AF0549300AC90CE /* InfoPage.m */; };
-		D02E3E421AF0549300AC90CE /* InfoPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = D02E3E401AF0549300AC90CE /* InfoPage.xib */; };
 		D02E3E451AF07C0800AC90CE /* sign_dollar.png in Resources */ = {isa = PBXBuildFile; fileRef = D02E3E441AF07C0800AC90CE /* sign_dollar.png */; };
 		D034E1241AEDCA6F00731450 /* dime_back.png in Resources */ = {isa = PBXBuildFile; fileRef = D034E1181AEDCA6F00731450 /* dime_back.png */; };
 		D034E1251AEDCA6F00731450 /* dime_front.png in Resources */ = {isa = PBXBuildFile; fileRef = D034E1191AEDCA6F00731450 /* dime_front.png */; };
@@ -33,23 +35,38 @@
 		D034E12F1AEDCA6F00731450 /* quarter_front.png in Resources */ = {isa = PBXBuildFile; fileRef = D034E1231AEDCA6F00731450 /* quarter_front.png */; };
 		D034E1331AEDCF6000731450 /* FailurePage.m in Sources */ = {isa = PBXBuildFile; fileRef = D034E1311AEDCF6000731450 /* FailurePage.m */; };
 		D034E1341AEDCF6000731450 /* FailurePage.xib in Resources */ = {isa = PBXBuildFile; fileRef = D034E1321AEDCF6000731450 /* FailurePage.xib */; };
+		D044D0081B3F517300934060 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D044D0071B3F517300934060 /* GameKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D05399C11AF101A40057BE83 /* OneDollar.m in Sources */ = {isa = PBXBuildFile; fileRef = D05399BF1AF101A40057BE83 /* OneDollar.m */; };
 		D05399C21AF101A40057BE83 /* OneDollar.xib in Resources */ = {isa = PBXBuildFile; fileRef = D05399C01AF101A40057BE83 /* OneDollar.xib */; };
 		D05399C61AF103B10057BE83 /* VictoryPage.m in Sources */ = {isa = PBXBuildFile; fileRef = D05399C41AF103B10057BE83 /* VictoryPage.m */; };
 		D05399C71AF103B10057BE83 /* VictoryPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = D05399C51AF103B10057BE83 /* VictoryPage.xib */; };
+		D05639FE1B05A46900AFDAFB /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D05639FD1B05A46900AFDAFB /* iAd.framework */; };
 		D06654831AEBD18D0001E520 /* NickelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D06654811AEBD18D0001E520 /* NickelVC.m */; };
 		D06654841AEBD18D0001E520 /* NickelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D06654821AEBD18D0001E520 /* NickelVC.xib */; };
 		D06654881AEBD2250001E520 /* PennyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D06654861AEBD2250001E520 /* PennyVC.m */; };
 		D06654891AEBD2250001E520 /* PennyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D06654871AEBD2250001E520 /* PennyVC.xib */; };
 		D066548F1AEBD6090001E520 /* DimeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D066548D1AEBD6090001E520 /* DimeVC.m */; };
 		D06654901AEBD6090001E520 /* DimeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D066548E1AEBD6090001E520 /* DimeVC.xib */; };
+		D090FF8B1B1621E100372BFF /* 3DollarCoinBack.png in Resources */ = {isa = PBXBuildFile; fileRef = D090FF891B1621E100372BFF /* 3DollarCoinBack.png */; };
+		D090FF8C1B1621E100372BFF /* 3DollarCoinFront.png in Resources */ = {isa = PBXBuildFile; fileRef = D090FF8A1B1621E100372BFF /* 3DollarCoinFront.png */; };
+		D090FF8F1B1621EA00372BFF /* 5dollarBack.png in Resources */ = {isa = PBXBuildFile; fileRef = D090FF8D1B1621EA00372BFF /* 5dollarBack.png */; };
+		D090FF901B1621EA00372BFF /* 5dollarFront.png in Resources */ = {isa = PBXBuildFile; fileRef = D090FF8E1B1621EA00372BFF /* 5dollarFront.png */; };
 		D09C80571AEA77DC0058717B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D09C80561AEA77DC0058717B /* main.m */; };
 		D09C805A1AEA77DC0058717B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D09C80591AEA77DC0058717B /* AppDelegate.m */; };
-		D09C805D1AEA77DC0058717B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D09C805C1AEA77DC0058717B /* ViewController.m */; };
 		D09C80601AEA77DC0058717B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09C805E1AEA77DC0058717B /* Main.storyboard */; };
 		D09C80621AEA77DC0058717B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D09C80611AEA77DC0058717B /* Images.xcassets */; };
 		D09C80651AEA77DC0058717B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D09C80631AEA77DC0058717B /* LaunchScreen.xib */; };
 		D09C80711AEA77DC0058717B /* Coin_GameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D09C80701AEA77DC0058717B /* Coin_GameTests.m */; };
+		D0CBF0E91B0BA714000A3D83 /* 2dollarCoin.png in Resources */ = {isa = PBXBuildFile; fileRef = D0CBF0E71B0BA714000A3D83 /* 2dollarCoin.png */; };
+		D0CBF0EA1B0BA714000A3D83 /* 2dollarCoinHead.png in Resources */ = {isa = PBXBuildFile; fileRef = D0CBF0E81B0BA714000A3D83 /* 2dollarCoinHead.png */; };
+		D0CBF0EE1B0BA72D000A3D83 /* TwoDollar.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CBF0EC1B0BA72D000A3D83 /* TwoDollar.m */; };
+		D0CBF0EF1B0BA72D000A3D83 /* TwoDollar.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0CBF0ED1B0BA72D000A3D83 /* TwoDollar.xib */; };
+		D0EF99221AF9012F00EE7D3E /* PF1.png in Resources */ = {isa = PBXBuildFile; fileRef = D0EF99201AF9012F00EE7D3E /* PF1.png */; };
+		D0EF99231AF9012F00EE7D3E /* PF2.png in Resources */ = {isa = PBXBuildFile; fileRef = D0EF99211AF9012F00EE7D3E /* PF2.png */; };
+		D0F11E241B3CF2D8008D1BD0 /* ThreeDollar.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F11E221B3CF2D8008D1BD0 /* ThreeDollar.m */; };
+		D0F11E251B3CF2D8008D1BD0 /* ThreeDollar.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0F11E231B3CF2D8008D1BD0 /* ThreeDollar.xib */; };
+		D0F11E2A1B3CF9F9008D1BD0 /* FiveDollar.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F11E281B3CF9F9008D1BD0 /* FiveDollar.m */; };
+		D0F11E2B1B3CF9F9008D1BD0 /* FiveDollar.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0F11E291B3CF9F9008D1BD0 /* FiveDollar.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +81,10 @@
 
 /* Begin PBXFileReference section */
 		D012DD511AF26816000C20DE /* myBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = myBackground.png; path = ../../../Downloads/myBackground.png; sourceTree = "<group>"; };
+		D0196D0C1B03C37D00B636B2 /* arrow1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow1.png; path = ../../../../../Volumes/CAPEUP/arrow1.png; sourceTree = "<group>"; };
+		D0196D0D1B03C37D00B636B2 /* arrow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow2.png; path = ../../../../../Volumes/CAPEUP/arrow2.png; sourceTree = "<group>"; };
+		D0196D101B03C43C00B636B2 /* arrow1.5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow1.5.png; path = ../../../../../Volumes/CAPEUP/arrow1.5.png; sourceTree = "<group>"; };
+		D0196D111B03C43C00B636B2 /* arrow2.5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow2.5.png; path = ../../../../../Volumes/CAPEUP/arrow2.5.png; sourceTree = "<group>"; };
 		D01C747D1AF4495200EDEDCF /* pointingHand1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pointingHand1.png; path = "../../../Creative Cloud Files/pointingHand1.png"; sourceTree = "<group>"; };
 		D01C747F1AF4495C00EDEDCF /* pointingHand2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pointingHand2.png; path = "../../../Creative Cloud Files/pointingHand2.png"; sourceTree = "<group>"; };
 		D02E3E2D1AF0324400AC90CE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -74,9 +95,6 @@
 		D02E3E381AF040FD00AC90CE /* HalfDollarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HalfDollarVC.h; sourceTree = "<group>"; };
 		D02E3E391AF040FD00AC90CE /* HalfDollarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HalfDollarVC.m; sourceTree = "<group>"; };
 		D02E3E3A1AF040FD00AC90CE /* HalfDollarVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HalfDollarVC.xib; sourceTree = "<group>"; };
-		D02E3E3E1AF0549300AC90CE /* InfoPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoPage.h; sourceTree = "<group>"; };
-		D02E3E3F1AF0549300AC90CE /* InfoPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoPage.m; sourceTree = "<group>"; };
-		D02E3E401AF0549300AC90CE /* InfoPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoPage.xib; sourceTree = "<group>"; };
 		D02E3E441AF07C0800AC90CE /* sign_dollar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sign_dollar.png; path = ../../../Downloads/sign_dollar.png; sourceTree = "<group>"; };
 		D034E1181AEDCA6F00731450 /* dime_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dime_back.png; sourceTree = "<group>"; };
 		D034E1191AEDCA6F00731450 /* dime_front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dime_front.png; sourceTree = "<group>"; };
@@ -93,12 +111,14 @@
 		D034E1301AEDCF6000731450 /* FailurePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FailurePage.h; sourceTree = "<group>"; };
 		D034E1311AEDCF6000731450 /* FailurePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FailurePage.m; sourceTree = "<group>"; };
 		D034E1321AEDCF6000731450 /* FailurePage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FailurePage.xib; sourceTree = "<group>"; };
+		D044D0071B3F517300934060 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		D05399BE1AF101A40057BE83 /* OneDollar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneDollar.h; sourceTree = "<group>"; };
 		D05399BF1AF101A40057BE83 /* OneDollar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneDollar.m; sourceTree = "<group>"; };
 		D05399C01AF101A40057BE83 /* OneDollar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OneDollar.xib; sourceTree = "<group>"; };
 		D05399C31AF103B10057BE83 /* VictoryPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VictoryPage.h; sourceTree = "<group>"; };
 		D05399C41AF103B10057BE83 /* VictoryPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VictoryPage.m; sourceTree = "<group>"; };
 		D05399C51AF103B10057BE83 /* VictoryPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VictoryPage.xib; sourceTree = "<group>"; };
+		D05639FD1B05A46900AFDAFB /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		D06654801AEBD18D0001E520 /* NickelVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NickelVC.h; sourceTree = "<group>"; };
 		D06654811AEBD18D0001E520 /* NickelVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NickelVC.m; sourceTree = "<group>"; };
 		D06654821AEBD18D0001E520 /* NickelVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NickelVC.xib; sourceTree = "<group>"; };
@@ -108,19 +128,34 @@
 		D066548C1AEBD6090001E520 /* DimeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DimeVC.h; sourceTree = "<group>"; };
 		D066548D1AEBD6090001E520 /* DimeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DimeVC.m; sourceTree = "<group>"; };
 		D066548E1AEBD6090001E520 /* DimeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DimeVC.xib; sourceTree = "<group>"; };
+		D090FF891B1621E100372BFF /* 3DollarCoinBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 3DollarCoinBack.png; path = ../../../Documents/3DollarCoinBack.png; sourceTree = "<group>"; };
+		D090FF8A1B1621E100372BFF /* 3DollarCoinFront.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 3DollarCoinFront.png; path = ../../../Documents/3DollarCoinFront.png; sourceTree = "<group>"; };
+		D090FF8D1B1621EA00372BFF /* 5dollarBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 5dollarBack.png; path = ../../../Documents/5dollarBack.png; sourceTree = "<group>"; };
+		D090FF8E1B1621EA00372BFF /* 5dollarFront.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 5dollarFront.png; path = ../../../Documents/5dollarFront.png; sourceTree = "<group>"; };
 		D09C80511AEA77DC0058717B /* Coin Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coin Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09C80551AEA77DC0058717B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D09C80561AEA77DC0058717B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D09C80581AEA77DC0058717B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "Coin Game/AppDelegate.h"; sourceTree = "<group>"; };
-		D09C80591AEA77DC0058717B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "Coin Game/AppDelegate.m"; sourceTree = "<group>"; };
-		D09C805B1AEA77DC0058717B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D09C805C1AEA77DC0058717B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D09C80581AEA77DC0058717B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D09C80591AEA77DC0058717B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D09C805F1AEA77DC0058717B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D09C80611AEA77DC0058717B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D09C80641AEA77DC0058717B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D09C806A1AEA77DC0058717B /* Coin GameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coin GameTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09C806F1AEA77DC0058717B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D09C80701AEA77DC0058717B /* Coin_GameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Coin_GameTests.m; sourceTree = "<group>"; };
+		D0CBF0E71B0BA714000A3D83 /* 2dollarCoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2dollarCoin.png; path = ../../../Documents/2dollarCoin.png; sourceTree = "<group>"; };
+		D0CBF0E81B0BA714000A3D83 /* 2dollarCoinHead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2dollarCoinHead.png; path = ../../../Documents/2dollarCoinHead.png; sourceTree = "<group>"; };
+		D0CBF0EB1B0BA72D000A3D83 /* TwoDollar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoDollar.h; sourceTree = "<group>"; };
+		D0CBF0EC1B0BA72D000A3D83 /* TwoDollar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoDollar.m; sourceTree = "<group>"; };
+		D0CBF0ED1B0BA72D000A3D83 /* TwoDollar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwoDollar.xib; sourceTree = "<group>"; };
+		D0EF99201AF9012F00EE7D3E /* PF1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PF1.png; path = "../../../Creative Cloud Files/PF1.png"; sourceTree = "<group>"; };
+		D0EF99211AF9012F00EE7D3E /* PF2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PF2.png; path = "../../../Creative Cloud Files/PF2.png"; sourceTree = "<group>"; };
+		D0F11E211B3CF2D8008D1BD0 /* ThreeDollar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeDollar.h; sourceTree = "<group>"; };
+		D0F11E221B3CF2D8008D1BD0 /* ThreeDollar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeDollar.m; sourceTree = "<group>"; };
+		D0F11E231B3CF2D8008D1BD0 /* ThreeDollar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThreeDollar.xib; sourceTree = "<group>"; };
+		D0F11E271B3CF9F9008D1BD0 /* FiveDollar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiveDollar.h; sourceTree = "<group>"; };
+		D0F11E281B3CF9F9008D1BD0 /* FiveDollar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiveDollar.m; sourceTree = "<group>"; };
+		D0F11E291B3CF9F9008D1BD0 /* FiveDollar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FiveDollar.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +163,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D044D0081B3F517300934060 /* GameKit.framework in Frameworks */,
+				D05639FE1B05A46900AFDAFB /* iAd.framework in Frameworks */,
 				D02E3E2E1AF0324400AC90CE /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,9 +212,6 @@
 		D02E3E431AF078B800AC90CE /* Info Page */ = {
 			isa = PBXGroup;
 			children = (
-				D02E3E3E1AF0549300AC90CE /* InfoPage.h */,
-				D02E3E3F1AF0549300AC90CE /* InfoPage.m */,
-				D02E3E401AF0549300AC90CE /* InfoPage.xib */,
 			);
 			name = "Info Page";
 			sourceTree = "<group>";
@@ -235,10 +269,15 @@
 		D09C80481AEA77DC0058717B = {
 			isa = PBXGroup;
 			children = (
-				D05399C91AF109560057BE83 /* Victory Page */,
+				D044D0071B3F517300934060 /* GameKit.framework */,
+				D05639FD1B05A46900AFDAFB /* iAd.framework */,
 				D02E3E2D1AF0324400AC90CE /* AudioToolbox.framework */,
 				D02E3E431AF078B800AC90CE /* Info Page */,
+				D05399C91AF109560057BE83 /* Victory Page */,
 				D02E3E311AF0399E00AC90CE /* FailurePage */,
+				D0F11E2C1B3CF9FF008D1BD0 /* Five Dollar */,
+				D0F11E261B3CF2DE008D1BD0 /* Three Dollar */,
+				D0CBF0F01B0BA748000A3D83 /* Two Dollar */,
 				D05399C81AF109480057BE83 /* One Dollar */,
 				D02E3E3D1AF0410400AC90CE /* Half Dollar */,
 				D02E3E371AF03A9700AC90CE /* Quarter */,
@@ -248,8 +287,6 @@
 				D09C80531AEA77DC0058717B /* Coin Game */,
 				D09C806D1AEA77DC0058717B /* Coin GameTests */,
 				D09C80521AEA77DC0058717B /* Products */,
-				D09C80581AEA77DC0058717B /* AppDelegate.h */,
-				D09C80591AEA77DC0058717B /* AppDelegate.m */,
 			);
 			sourceTree = "<group>";
 		};
@@ -265,8 +302,8 @@
 		D09C80531AEA77DC0058717B /* Coin Game */ = {
 			isa = PBXGroup;
 			children = (
-				D09C805B1AEA77DC0058717B /* ViewController.h */,
-				D09C805C1AEA77DC0058717B /* ViewController.m */,
+				D09C80581AEA77DC0058717B /* AppDelegate.h */,
+				D09C80591AEA77DC0058717B /* AppDelegate.m */,
 				D09C805E1AEA77DC0058717B /* Main.storyboard */,
 				D09C80611AEA77DC0058717B /* Images.xcassets */,
 				D09C80631AEA77DC0058717B /* LaunchScreen.xib */,
@@ -278,6 +315,18 @@
 		D09C80541AEA77DC0058717B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D090FF8D1B1621EA00372BFF /* 5dollarBack.png */,
+				D090FF8E1B1621EA00372BFF /* 5dollarFront.png */,
+				D090FF891B1621E100372BFF /* 3DollarCoinBack.png */,
+				D090FF8A1B1621E100372BFF /* 3DollarCoinFront.png */,
+				D0CBF0E71B0BA714000A3D83 /* 2dollarCoin.png */,
+				D0CBF0E81B0BA714000A3D83 /* 2dollarCoinHead.png */,
+				D0196D101B03C43C00B636B2 /* arrow1.5.png */,
+				D0196D111B03C43C00B636B2 /* arrow2.5.png */,
+				D0196D0C1B03C37D00B636B2 /* arrow1.png */,
+				D0196D0D1B03C37D00B636B2 /* arrow2.png */,
+				D0EF99201AF9012F00EE7D3E /* PF1.png */,
+				D0EF99211AF9012F00EE7D3E /* PF2.png */,
 				D01C747D1AF4495200EDEDCF /* pointingHand1.png */,
 				D01C747F1AF4495C00EDEDCF /* pointingHand2.png */,
 				D012DD511AF26816000C20DE /* myBackground.png */,
@@ -316,6 +365,36 @@
 				D09C806F1AEA77DC0058717B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0CBF0F01B0BA748000A3D83 /* Two Dollar */ = {
+			isa = PBXGroup;
+			children = (
+				D0CBF0EB1B0BA72D000A3D83 /* TwoDollar.h */,
+				D0CBF0EC1B0BA72D000A3D83 /* TwoDollar.m */,
+				D0CBF0ED1B0BA72D000A3D83 /* TwoDollar.xib */,
+			);
+			name = "Two Dollar";
+			sourceTree = "<group>";
+		};
+		D0F11E261B3CF2DE008D1BD0 /* Three Dollar */ = {
+			isa = PBXGroup;
+			children = (
+				D0F11E211B3CF2D8008D1BD0 /* ThreeDollar.h */,
+				D0F11E221B3CF2D8008D1BD0 /* ThreeDollar.m */,
+				D0F11E231B3CF2D8008D1BD0 /* ThreeDollar.xib */,
+			);
+			name = "Three Dollar";
+			sourceTree = "<group>";
+		};
+		D0F11E2C1B3CF9FF008D1BD0 /* Five Dollar */ = {
+			isa = PBXGroup;
+			children = (
+				D0F11E271B3CF9F9008D1BD0 /* FiveDollar.h */,
+				D0F11E281B3CF9F9008D1BD0 /* FiveDollar.m */,
+				D0F11E291B3CF9F9008D1BD0 /* FiveDollar.xib */,
+			);
+			name = "Five Dollar";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,34 +478,48 @@
 			buildActionMask = 2147483647;
 			files = (
 				D01C74801AF4495C00EDEDCF /* pointingHand2.png in Resources */,
+				D0196D131B03C43C00B636B2 /* arrow2.5.png in Resources */,
+				D0CBF0EF1B0BA72D000A3D83 /* TwoDollar.xib in Resources */,
+				D0EF99231AF9012F00EE7D3E /* PF2.png in Resources */,
 				D034E1251AEDCA6F00731450 /* dime_front.png in Resources */,
 				D06654891AEBD2250001E520 /* PennyVC.xib in Resources */,
+				D0F11E251B3CF2D8008D1BD0 /* ThreeDollar.xib in Resources */,
 				D02E3E301AF0327F00AC90CE /* Coin Sound.mp3 in Resources */,
 				D034E12F1AEDCA6F00731450 /* quarter_front.png in Resources */,
 				D01C747E1AF4495200EDEDCF /* pointingHand1.png in Resources */,
 				D06654841AEBD18D0001E520 /* NickelVC.xib in Resources */,
+				D090FF8C1B1621E100372BFF /* 3DollarCoinFront.png in Resources */,
 				D09C80601AEA77DC0058717B /* Main.storyboard in Resources */,
 				D05399C21AF101A40057BE83 /* OneDollar.xib in Resources */,
+				D0CBF0E91B0BA714000A3D83 /* 2dollarCoin.png in Resources */,
 				D034E12D1AEDCA6F00731450 /* penny_front.png in Resources */,
 				D06654901AEBD6090001E520 /* DimeVC.xib in Resources */,
 				D02E3E451AF07C0800AC90CE /* sign_dollar.png in Resources */,
 				D034E1271AEDCA6F00731450 /* dollarCoinBack.png in Resources */,
 				D02E3E361AF03A9300AC90CE /* QuarterVC.xib in Resources */,
 				D012DD521AF26816000C20DE /* myBackground.png in Resources */,
+				D0196D0F1B03C37D00B636B2 /* arrow2.png in Resources */,
 				D034E1261AEDCA6F00731450 /* dollar_coin_front.png in Resources */,
 				D05399C71AF103B10057BE83 /* VictoryPage.xib in Resources */,
 				D034E1241AEDCA6F00731450 /* dime_back.png in Resources */,
+				D090FF8B1B1621E100372BFF /* 3DollarCoinBack.png in Resources */,
 				D034E12A1AEDCA6F00731450 /* Nickel_back.png in Resources */,
 				D02E3E3C1AF040FD00AC90CE /* HalfDollarVC.xib in Resources */,
 				D034E1291AEDCA6F00731450 /* halfDollarFront.png in Resources */,
 				D09C80651AEA77DC0058717B /* LaunchScreen.xib in Resources */,
 				D034E12B1AEDCA6F00731450 /* nickel_front.png in Resources */,
 				D034E12E1AEDCA6F00731450 /* quarter_back.png in Resources */,
-				D02E3E421AF0549300AC90CE /* InfoPage.xib in Resources */,
+				D0196D0E1B03C37D00B636B2 /* arrow1.png in Resources */,
+				D090FF901B1621EA00372BFF /* 5dollarFront.png in Resources */,
+				D0F11E2B1B3CF9F9008D1BD0 /* FiveDollar.xib in Resources */,
 				D034E12C1AEDCA6F00731450 /* penny_back.png in Resources */,
 				D034E1341AEDCF6000731450 /* FailurePage.xib in Resources */,
+				D0EF99221AF9012F00EE7D3E /* PF1.png in Resources */,
+				D090FF8F1B1621EA00372BFF /* 5dollarBack.png in Resources */,
 				D034E1281AEDCA6F00731450 /* halfDollarBack.png in Resources */,
+				D0196D121B03C43C00B636B2 /* arrow1.5.png in Resources */,
 				D09C80621AEA77DC0058717B /* Images.xcassets in Resources */,
+				D0CBF0EA1B0BA714000A3D83 /* 2dollarCoinHead.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,17 +537,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D09C805D1AEA77DC0058717B /* ViewController.m in Sources */,
 				D05399C61AF103B10057BE83 /* VictoryPage.m in Sources */,
 				D034E1331AEDCF6000731450 /* FailurePage.m in Sources */,
 				D05399C11AF101A40057BE83 /* OneDollar.m in Sources */,
+				D0F11E241B3CF2D8008D1BD0 /* ThreeDollar.m in Sources */,
 				D09C805A1AEA77DC0058717B /* AppDelegate.m in Sources */,
 				D02E3E3B1AF040FD00AC90CE /* HalfDollarVC.m in Sources */,
 				D02E3E351AF03A9300AC90CE /* QuarterVC.m in Sources */,
+				D0CBF0EE1B0BA72D000A3D83 /* TwoDollar.m in Sources */,
 				D09C80571AEA77DC0058717B /* main.m in Sources */,
 				D066548F1AEBD6090001E520 /* DimeVC.m in Sources */,
+				D0F11E2A1B3CF9F9008D1BD0 /* FiveDollar.m in Sources */,
 				D06654881AEBD2250001E520 /* PennyVC.m in Sources */,
-				D02E3E411AF0549300AC90CE /* InfoPage.m in Sources */,
 				D06654831AEBD18D0001E520 /* NickelVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

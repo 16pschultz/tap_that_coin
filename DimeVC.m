@@ -34,12 +34,7 @@
     NSURL *buttonUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Coin Sound" ofType:@"mp3"]];
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)buttonUrl, &SoundID);
     
-    
-    if (self.scoreInt > self.highScoreInt) {
-        
-        self.highScoreInt = self.scoreInt;
-        
-    }
+
 
 }
 
@@ -59,16 +54,18 @@
     
     self.userMoney = self.userMoney + 0.10;
     
-    if (self.userMoney > 5.40) {
+    if (self.userMoney > 4.90) {
         
         QuarterVC *quarterVC = [[QuarterVC alloc] init];
         quarterVC.scoreInt = self.countdownTimer + self.scoreInt;
+        
+        quarterVC.highScoreInt = self.highScoreInt;
+
         quarterVC.countdownTimer = self.countdownTimer + 5;
         quarterVC.userMoney = self.userMoney;
         
-        //Launch Quarter
-        [self presentViewController:quarterVC animated:YES completion:NULL];
-        
+        //Launch Quarter Page
+        [self presentViewController:quarterVC animated:YES completion:nil];
         
     }
     
@@ -76,10 +73,98 @@
     
     self.labelGoal.text = [NSString stringWithFormat:@"%.2lf", self.userMoney];
 
+    [self randomizeMoneySignLocations];
+
+}
+
+-(void)countdown {
     
+    self.countdownTimer -= 1;
+    labelTimer.text = [NSString stringWithFormat:@"%i", self.countdownTimer];
+    
+    if (self.countdownTimer < 0) {
+        //If user pressed on iAd during app, the timer keeps running and goes into negatives.
+        //If the timer reaches 0 while the user is in iAd, the app opens up the Failure Page with no animation
+        
+        FailurePage *failurePage = [[FailurePage alloc] init];
+        
+        failurePage.scoreInt = self.scoreInt;
+        failurePage.highScoreInt = self.highScoreInt;
+        failurePage.userCurrentBag = self.userMoney;
+        failurePage.stringImage = @"nickel_front.png";
+        
+        [self presentViewController:failurePage animated:NO completion:nil];
+        
+    }
+    
+    
+    if (self.countdownTimer == 0) {
+        FailurePage *failurePage = [[FailurePage alloc] init];
+        
+        failurePage.scoreInt = self.scoreInt;
+        
+        
+        if (self.scoreInt > self.highScoreInt && self.scoreInt > [[NSUserDefaults standardUserDefaults] integerForKey:@"HighScore"]) {
+            
+            self.highScoreInt = self.scoreInt;
+            [[NSUserDefaults standardUserDefaults] setInteger:self.highScoreInt forKey:@"HighScore"];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+
+        }
+        
+        if (self.userMoney > [[NSUserDefaults standardUserDefaults] doubleForKey:@"UserBestBag"]) {
+            
+            [[NSUserDefaults standardUserDefaults] setDouble:self.userMoney forKey:@"UserBestBag"];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+        }
+        
+        failurePage.userCurrentBag = self.userMoney;
+
+        failurePage.highScoreInt = self.highScoreInt;
+        
+        failurePage.stringImage = @"dime_front.png";
+
+        
+//        failurePage.dimeButton.hidden = NO;
+        
+        [self presentViewController:failurePage animated:YES completion:nil];
+
+    } else {
+        nil;
+    }
+    
+    
+}
+
+-(void)bannerViewDidLoadAd:(ADBannerView *)banner {
+    
+    
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:1];
+    [banner setAlpha:1];
+    [UIView commitAnimations];
+    
+    
+}
+
+
+-(void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error {
+    
+    
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:1];
+    [banner setAlpha:0];
+    [UIView commitAnimations];
+    
+    
+}
+
+
+
+- (void) randomizeMoneySignLocations {
     
     // Random Money Sign Generator
-
+    
     int RandomImageChange = arc4random() % 15;
     switch (RandomImageChange) {
         case 0:
@@ -235,28 +320,6 @@
         default:
             break;
     }
-
-
 }
-
--(void)countdown {
-    
-    self.countdownTimer -= 1;
-    labelTimer.text = [NSString stringWithFormat:@"%i", self.countdownTimer];
-    
-    if (self.countdownTimer == 0) {
-        FailurePage *failurePage = [[FailurePage alloc] init];
-        
-        failurePage.scoreInt = self.scoreInt;
-        failurePage.highScoreInt = self.highScoreInt;
-        
-//        failurePage.dimeButton.hidden = NO;
-        
-        [self presentViewController:failurePage animated:YES completion:NULL];
-    }
-    
-    
-}
-
 
 @end

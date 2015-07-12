@@ -8,26 +8,33 @@
 
 #import <UIKit/UIKit.h>
 #import <AudioToolbox/AudioToolbox.h>
+#import <iAd/iAd.h>
 
-@interface PennyVC : UIViewController {
+
+@interface PennyVC : UIViewController <ADBannerViewDelegate> {
     
     
     IBOutlet UILabel *labelTimer;
     
     NSTimer *timer;
     
+    NSTimer *timer2;
+
     SystemSoundID SoundID;
         
     IBOutlet UIImageView *pointerTouch;
 
+    IBOutlet UIImageView *arrowGoal;
+    
+    int example;
 }
 
-
+@property (strong, nonatomic) IBOutlet UIView *translucentView;
 
 - (IBAction)pennyButton;
 
 
-
+- (IBAction)translucentButton;
 
 
 @property (nonatomic, assign) int scoreInt;
@@ -40,7 +47,10 @@
 
 @property (nonatomic, assign) IBOutlet UILabel *labelGoal;
 
+
 @property (nonatomic, assign) int countdownTimer;
+
+@property (nonatomic, assign) int animationTimer;
 
 
 

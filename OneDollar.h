@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <AudioToolbox/AudioToolbox.h>
+#import <iAd/iAd.h>
 
-@interface OneDollar : UIViewController {
+
+@interface OneDollar : UIViewController <ADBannerViewDelegate> {
     
     NSTimer *timer;
     

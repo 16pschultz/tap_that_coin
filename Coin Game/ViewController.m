@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "PennyVC.h"
-#import "InfoPage.h"
+#import <GameKit/GameKit.h>
 
 @interface ViewController ()
 
@@ -19,10 +19,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    PennyVC *pennyVC = [[PennyVC alloc] init];
+    [self presentViewController:pennyVC animated:NO completion:nil];
+    
+//    [self presentViewController:pennyVC animated:YES completion:NULL];
+    
+    
     NSURL *buttonUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Coin Sound" ofType:@"mp3"]];
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)buttonUrl, &SoundID);
-
+    
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -37,7 +44,6 @@
     [self presentViewController:pennyVC animated:YES completion:NULL];
     
 }
-
 
 
 

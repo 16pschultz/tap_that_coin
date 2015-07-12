@@ -12,14 +12,32 @@
 @interface FailurePage : UIViewController {
     
     
-    
-    
-    
-    
 }
 
 
 - (IBAction)startoverButton;
+
+
+@property (assign, nonatomic) NSInteger lastHighScore;
+
+
+
+//Together, both get best bag score.
+
+@property (nonatomic, assign) double userMoney;
+
+@property (nonatomic, assign) double userCurrentBag;
+
+
+@property (strong, nonatomic) IBOutlet UILabel *currentBagLabel;
+
+@property (strong, nonatomic) IBOutlet UILabel *bestBagLabel;
+
+
+@property (strong, nonatomic) NSString *stringImage;
+
+@property (strong, nonatomic) IBOutlet UIImageView *imageFailure1;
+
 
 @property (nonatomic, assign) IBOutlet UILabel *scoreLabel;
 
@@ -29,19 +47,8 @@
 
 @property (nonatomic, assign) int highScoreInt;
 
+@property (nonatomic, assign) int savedHighScoreInt;
 
-
-@property (nonatomic, assign) IBOutlet UIButton *pennyButton;
-
-@property (nonatomic, assign) IBOutlet UIButton *NickelButton;
-
-@property (nonatomic, assign) IBOutlet UIButton *dimeButton;
-
-@property (nonatomic, assign) IBOutlet UIButton *quarterButton;
-
-@property (nonatomic, assign) IBOutlet UIButton *halfDollarButton;
-
-@property (nonatomic, assign) IBOutlet UIButton *oneDollarButton;
 
 
 @end
