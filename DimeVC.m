@@ -24,9 +24,9 @@
     NickelVC *nickelVC = [[NickelVC alloc] init];
     self.scoreInt = self.scoreInt + nickelVC.scoreInt;
     
-    self.scoreLabel.text = [NSString stringWithFormat:@"%i", self.scoreInt];
+    self.scoreLabel.text = [NSString stringWithFormat:@"Score:          %i", self.scoreInt];
     
-    self.labelGoal.text = [NSString stringWithFormat:@"%.2lf", self.userMoney];
+    self.labelGoal.text = [NSString stringWithFormat:@"Bag: $%.2lf", self.userMoney];
 
     
     timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(countdown) userInfo:nil repeats:YES];
@@ -71,7 +71,7 @@
     
     AudioServicesPlaySystemSound(SoundID);
     
-    self.labelGoal.text = [NSString stringWithFormat:@"%.2lf", self.userMoney];
+    self.labelGoal.text = [NSString stringWithFormat:@"Bag: $%.2lf", self.userMoney];
 
     [self randomizeMoneySignLocations];
 
