@@ -96,7 +96,7 @@
     
     AudioServicesPlaySystemSound(SoundID);
 
-    self.labelGoal.text = [NSString stringWithFormat:@"%.2lf", self.userMoney];
+    self.labelGoal.text = [NSString stringWithFormat:@"Bag: $%.2lf", self.userMoney];
     
     [self randomizeMoneySignLocations];
 }
