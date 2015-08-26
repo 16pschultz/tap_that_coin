@@ -37,9 +37,13 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="RD2-n1-SyP">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Goal: $0.10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnJ-SE-fxZ">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goal: $0.10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnJ-SE-fxZ">
                     <rect key="frame" x="9" y="46" width="114" height="40"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="fDO-KO-xCB"/>
+                        <constraint firstAttribute="width" constant="114" id="h35-pV-PRw"/>
+                    </constraints>
                     <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -50,9 +54,13 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7uF-eZ-cax">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:         0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7uF-eZ-cax">
                     <rect key="frame" x="72" y="452" width="176" height="43"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="176" id="UoO-1R-owb"/>
+                        <constraint firstAttribute="height" constant="43" id="tAt-bs-l5a"/>
+                    </constraints>
                     <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -77,9 +85,13 @@
                         <action selector="pennyButton" destination="-1" eventType="touchUpInside" id="VBd-cy-2KA"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEC-kE-U4L">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEC-kE-U4L">
                     <rect key="frame" x="134" y="35" width="52" height="62"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="52" id="0hD-dz-bdP"/>
+                        <constraint firstAttribute="height" constant="62" id="HlR-1C-gu0"/>
+                    </constraints>
                     <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="32"/>
                     <nil key="highlightedColor"/>
                     <userDefinedRuntimeAttributes>
@@ -134,9 +146,13 @@
                 <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="0tr-c5-sVb">
                     <rect key="frame" x="161" y="8" width="52" height="52"/>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bag: $0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOK-QK-B8t">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bag: $0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOK-QK-B8t">
                     <rect key="frame" x="195" y="46" width="114" height="40"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="114" id="R5r-BC-k4m"/>
+                        <constraint firstAttribute="height" constant="40" id="blQ-7l-y5l"/>
+                    </constraints>
                     <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                     <nil key="highlightedColor"/>
                     <userDefinedRuntimeAttributes>
@@ -146,28 +162,40 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I0R-mk-rIx">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I0R-mk-rIx">
                     <rect key="frame" x="161" y="265" width="136" height="136"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="136" id="1zg-sb-6z2"/>
+                        <constraint firstAttribute="width" constant="136" id="l9P-ds-ArM"/>
+                    </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rc5-8A-leI">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rc5-8A-leI">
                     <rect key="frame" x="46" y="88" width="39" height="51"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="51" id="SRn-OY-9TS"/>
+                        <constraint firstAttribute="width" constant="39" id="k0Y-yh-RQ3"/>
+                    </constraints>
                 </imageView>
-                <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7VX-3I-ESM">
+                <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="7VX-3I-ESM">
                     <rect key="frame" x="0.0" y="518" width="320" height="50"/>
                     <connections>
                         <outlet property="delegate" destination="-1" id="SYa-l1-Rlh"/>
                     </connections>
                 </adBannerView>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8qU-Ra-9KM">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8qU-Ra-9KM">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap Coin to Start!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ChZ-QJ-NGR">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Coin to Start!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ChZ-QJ-NGR">
                             <rect key="frame" x="53" y="139" width="215" height="33"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="215" id="72d-eJ-USn"/>
+                                <constraint firstAttribute="height" constant="33" id="8I6-A2-T82"/>
+                            </constraints>
                             <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cZ-eF-9mZ">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cZ-eF-9mZ">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             <state key="normal">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -178,15 +206,46 @@
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.59999999999999998" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="ChZ-QJ-NGR" firstAttribute="top" secondItem="8qU-Ra-9KM" secondAttribute="top" constant="139" id="EfW-sh-dfN"/>
+                        <constraint firstItem="3cZ-eF-9mZ" firstAttribute="leading" secondItem="8qU-Ra-9KM" secondAttribute="leading" id="IbV-T3-vss"/>
+                        <constraint firstItem="ChZ-QJ-NGR" firstAttribute="leading" secondItem="8qU-Ra-9KM" secondAttribute="leading" constant="53" id="Luj-yV-FkQ"/>
+                        <constraint firstAttribute="bottom" secondItem="3cZ-eF-9mZ" secondAttribute="bottom" id="MSM-Ub-8gM"/>
+                        <constraint firstItem="3cZ-eF-9mZ" firstAttribute="top" secondItem="8qU-Ra-9KM" secondAttribute="top" id="YW1-2X-T6E"/>
+                        <constraint firstAttribute="centerX" secondItem="ChZ-QJ-NGR" secondAttribute="centerX" id="dQN-bx-TRh"/>
+                        <constraint firstAttribute="trailing" secondItem="3cZ-eF-9mZ" secondAttribute="trailing" id="eQP-4c-lLL"/>
+                        <constraint firstAttribute="trailing" secondItem="ChZ-QJ-NGR" secondAttribute="trailing" constant="52" id="v2e-hE-gyc"/>
+                    </constraints>
                 </view>
             </subviews>
             <constraints>
+                <constraint firstItem="uEC-kE-U4L" firstAttribute="centerY" secondItem="kOK-QK-B8t" secondAttribute="centerY" id="0g7-ko-6Mw"/>
+                <constraint firstItem="uEC-kE-U4L" firstAttribute="centerY" secondItem="vnJ-SE-fxZ" secondAttribute="centerY" id="1jJ-K7-xW5"/>
+                <constraint firstItem="Rc5-8A-leI" firstAttribute="top" secondItem="vnJ-SE-fxZ" secondAttribute="bottom" constant="2" id="4Kj-7E-Y91"/>
                 <constraint firstAttribute="trailing" secondItem="RD2-n1-SyP" secondAttribute="trailing" id="55d-Vv-He1"/>
                 <constraint firstAttribute="centerY" secondItem="Bmi-ki-UFa" secondAttribute="centerY" id="7ur-on-ib1"/>
+                <constraint firstItem="vnJ-SE-fxZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="9" id="98w-PJ-aK5"/>
+                <constraint firstAttribute="trailing" secondItem="kOK-QK-B8t" secondAttribute="trailing" constant="11" id="9CR-Zt-Kmg"/>
                 <constraint firstItem="RD2-n1-SyP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ARO-z0-2ku"/>
+                <constraint firstItem="8qU-Ra-9KM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="AZq-ce-hO4"/>
+                <constraint firstItem="I0R-mk-rIx" firstAttribute="leading" secondItem="Bmi-ki-UFa" secondAttribute="trailing" constant="-72" id="BUr-M9-aAB"/>
+                <constraint firstAttribute="bottom" secondItem="7VX-3I-ESM" secondAttribute="bottom" id="Bah-Fb-ipB"/>
+                <constraint firstItem="8qU-Ra-9KM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JPC-zZ-7zL"/>
+                <constraint firstAttribute="bottom" secondItem="8qU-Ra-9KM" secondAttribute="bottom" id="S0H-lE-OGm"/>
                 <constraint firstItem="RD2-n1-SyP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Wob-vu-18i"/>
+                <constraint firstAttribute="centerX" secondItem="uEC-kE-U4L" secondAttribute="centerX" id="XEI-8C-QmO"/>
+                <constraint firstAttribute="trailing" secondItem="8qU-Ra-9KM" secondAttribute="trailing" id="bBG-gc-xiN"/>
+                <constraint firstAttribute="trailing" secondItem="7VX-3I-ESM" secondAttribute="trailing" id="bUg-FU-XI1"/>
                 <constraint firstAttribute="centerX" secondItem="Bmi-ki-UFa" secondAttribute="centerX" id="cgZ-qm-WJ7"/>
+                <constraint firstItem="I0R-mk-rIx" firstAttribute="top" secondItem="Bmi-ki-UFa" secondAttribute="bottom" constant="-92" id="dWr-k7-J6k"/>
                 <constraint firstAttribute="bottom" secondItem="RD2-n1-SyP" secondAttribute="bottom" id="dtb-1a-GAc"/>
+                <constraint firstItem="7VX-3I-ESM" firstAttribute="top" secondItem="7uF-eZ-cax" secondAttribute="bottom" constant="23" id="fWR-sG-0F8"/>
+                <constraint firstAttribute="centerX" secondItem="7uF-eZ-cax" secondAttribute="centerX" id="gjk-ui-QxV"/>
+                <constraint firstItem="Rc5-8A-leI" firstAttribute="centerX" secondItem="vnJ-SE-fxZ" secondAttribute="centerX" constant="-0.5" id="lzd-QP-pag"/>
+                <constraint firstItem="7VX-3I-ESM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mty-D7-xwN"/>
+                <constraint firstItem="uEC-kE-U4L" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="35" id="tYM-18-RAn"/>
+                <constraint firstItem="uEC-kE-U4L" firstAttribute="leading" secondItem="vnJ-SE-fxZ" secondAttribute="trailing" constant="11" id="uam-Ai-HwA"/>
+                <constraint firstItem="kOK-QK-B8t" firstAttribute="leading" secondItem="uEC-kE-U4L" secondAttribute="trailing" constant="9" id="xyR-bZ-9ZD"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <point key="canvasLocation" x="251" y="339"/>

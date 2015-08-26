@@ -32,12 +32,16 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="myBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="TSC-30-4F3">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="TSC-30-4F3">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bag: $900.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypV-mz-OyV">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bag: $900.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypV-mz-OyV">
                     <rect key="frame" x="195" y="46" width="114" height="40"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="114" id="WSl-8r-hth"/>
+                        <constraint firstAttribute="height" constant="40" id="bM0-8Z-QZ7"/>
+                    </constraints>
                     <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -48,19 +52,13 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojJ-0i-SKr">
-                    <rect key="frame" x="75" y="196" width="171" height="171"/>
-                    <state key="normal" title="Button" image="5dollarFront.png">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <state key="highlighted" image="5dollarBack.png"/>
-                    <connections>
-                        <action selector="fiveDollarCoin" destination="-1" eventType="touchUpInside" id="QTd-wM-cok"/>
-                    </connections>
-                </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2L-GO-wey">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2L-GO-wey">
                     <rect key="frame" x="72" y="452" width="176" height="43"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="176" id="cCT-Di-3pa"/>
+                        <constraint firstAttribute="height" constant="43" id="rsy-hm-1Ej"/>
+                    </constraints>
                     <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -71,9 +69,13 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Goal: $1000.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZq-Ik-Hli">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goal: $1000.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZq-Ik-Hli">
                     <rect key="frame" x="9" y="46" width="114" height="38"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="114" id="JDk-v4-moo"/>
+                        <constraint firstAttribute="height" constant="38" id="pJo-Si-9nk"/>
+                    </constraints>
                     <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -129,12 +131,16 @@
                 <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="M2Z-O6-i61">
                     <rect key="frame" x="194" y="383" width="52" height="52"/>
                 </imageView>
-                <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jBq-xD-YOB">
+                <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="jBq-xD-YOB">
                     <rect key="frame" x="0.0" y="518" width="320" height="50"/>
                 </adBannerView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ady-b6-arf">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ady-b6-arf">
                     <rect key="frame" x="134" y="35" width="52" height="62"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="62" id="Ts2-PD-p19"/>
+                        <constraint firstAttribute="width" constant="52" id="aZf-n5-Rtl"/>
+                    </constraints>
                     <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="32"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -145,8 +151,43 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojJ-0i-SKr">
+                    <rect key="frame" x="75" y="198" width="171" height="171"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="171" id="39Q-7P-NOp"/>
+                        <constraint firstAttribute="height" constant="171" id="FnW-pD-I0v"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="5dollarFront.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="5dollarBack.png"/>
+                    <connections>
+                        <action selector="fiveDollarCoin" destination="-1" eventType="touchUpInside" id="QTd-wM-cok"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ypV-mz-OyV" firstAttribute="leading" secondItem="Ady-b6-arf" secondAttribute="trailing" constant="9" id="7IV-bx-3Kb"/>
+                <constraint firstAttribute="centerX" secondItem="t2L-GO-wey" secondAttribute="centerX" id="Cn7-Yx-d5U"/>
+                <constraint firstItem="jBq-xD-YOB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Iwf-Fq-bay"/>
+                <constraint firstItem="Ady-b6-arf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="35" id="J2t-3r-nlV"/>
+                <constraint firstAttribute="trailing" secondItem="jBq-xD-YOB" secondAttribute="trailing" id="JJU-8T-s3Y"/>
+                <constraint firstItem="Ady-b6-arf" firstAttribute="leading" secondItem="FZq-Ik-Hli" secondAttribute="trailing" constant="11" id="SDY-OA-ofS"/>
+                <constraint firstAttribute="centerX" secondItem="Ady-b6-arf" secondAttribute="centerX" id="Ur8-K9-yZH"/>
+                <constraint firstItem="Ady-b6-arf" firstAttribute="centerY" secondItem="FZq-Ik-Hli" secondAttribute="centerY" constant="1" id="Uti-yx-bTb"/>
+                <constraint firstItem="FZq-Ik-Hli" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="9" id="VgZ-u5-mF9"/>
+                <constraint firstItem="TSC-30-4F3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Xuf-fh-k47"/>
+                <constraint firstAttribute="centerX" secondItem="ojJ-0i-SKr" secondAttribute="centerX" id="dAv-q0-ndD"/>
+                <constraint firstItem="Ady-b6-arf" firstAttribute="centerY" secondItem="ypV-mz-OyV" secondAttribute="centerY" id="ebN-xa-7i4"/>
+                <constraint firstAttribute="centerY" secondItem="ojJ-0i-SKr" secondAttribute="centerY" id="ftw-hC-anr"/>
+                <constraint firstAttribute="trailing" secondItem="TSC-30-4F3" secondAttribute="trailing" id="iht-XM-02Q"/>
+                <constraint firstAttribute="bottom" secondItem="TSC-30-4F3" secondAttribute="bottom" id="j5F-fe-gNa"/>
+                <constraint firstItem="jBq-xD-YOB" firstAttribute="top" secondItem="t2L-GO-wey" secondAttribute="bottom" constant="23" id="m4f-jT-Zgy"/>
+                <constraint firstAttribute="bottom" secondItem="jBq-xD-YOB" secondAttribute="bottom" id="nuN-mQ-TR7"/>
+                <constraint firstItem="TSC-30-4F3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qQq-bK-2H4"/>
+                <constraint firstAttribute="trailing" secondItem="ypV-mz-OyV" secondAttribute="trailing" constant="11" id="z7s-oO-aUU"/>
+            </constraints>
             <point key="canvasLocation" x="245" y="355"/>
         </view>
     </objects>

@@ -58,8 +58,8 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dgk-6N-jDy">
                     <rect key="frame" x="161" y="128" width="52" height="52"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="nickel_front.png" translatesAutoresizingMaskIntoConstraints="NO" id="kNM-zo-0nY">
-                    <rect key="frame" x="66" y="212" width="245" height="245"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nickel_front.png" translatesAutoresizingMaskIntoConstraints="NO" id="kNM-zo-0nY">
+                    <rect key="frame" x="65" y="211" width="245" height="245"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="245" id="cT5-sF-vgC"/>
                         <constraint firstAttribute="height" constant="245" id="wIz-DS-Qbw"/>
@@ -67,8 +67,8 @@
                 </imageView>
             </subviews>
             <constraints>
-                <constraint firstAttribute="centerX" secondItem="kNM-zo-0nY" secondAttribute="centerX" id="6j8-rm-ESe"/>
-                <constraint firstAttribute="centerY" secondItem="kNM-zo-0nY" secondAttribute="centerY" id="Urv-aI-2IH"/>
+                <constraint firstAttribute="centerY" secondItem="kNM-zo-0nY" secondAttribute="centerY" id="8Zy-HS-0bs"/>
+                <constraint firstAttribute="centerX" secondItem="kNM-zo-0nY" secondAttribute="centerX" id="ch3-Cg-QRp"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
