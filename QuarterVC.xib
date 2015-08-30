@@ -6,21 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuarterVC">
             <connections>
-                <outlet property="dollarSign1" destination="ykF-5R-9Yc" id="tj0-mu-aXc"/>
-                <outlet property="dollarSign10" destination="me3-4P-GJD" id="1tG-ow-8aZ"/>
                 <outlet property="dollarSign11" destination="pSK-Ps-58k" id="TRi-iZ-FHV"/>
-                <outlet property="dollarSign12" destination="1Xc-vh-P3C" id="tC4-2v-FaQ"/>
-                <outlet property="dollarSign13" destination="1hk-Bo-e2Y" id="AVK-pR-WFl"/>
-                <outlet property="dollarSign14" destination="uxx-uS-sKk" id="ara-JV-1Ps"/>
-                <outlet property="dollarSign15" destination="y60-1p-aUr" id="jRL-1d-PEL"/>
-                <outlet property="dollarSign2" destination="0jM-6b-1hu" id="sm7-cq-nI3"/>
-                <outlet property="dollarSign3" destination="Dlo-9x-BHy" id="abH-X2-Par"/>
-                <outlet property="dollarSign4" destination="CtJ-6p-zLt" id="6Hb-8C-Nmh"/>
-                <outlet property="dollarSign5" destination="Hsg-dp-PKz" id="352-Sl-3P7"/>
-                <outlet property="dollarSign6" destination="4ay-ae-qe8" id="iLq-Xk-Gyr"/>
-                <outlet property="dollarSign7" destination="bDx-9q-nxg" id="0G2-5Q-4g2"/>
-                <outlet property="dollarSign8" destination="UJL-rP-2vr" id="A72-jN-l5u"/>
-                <outlet property="dollarSign9" destination="qYJ-gz-VhE" id="q87-sW-wa2"/>
                 <outlet property="labelGoal" destination="kux-UN-Kv5" id="SgN-nm-b7F"/>
                 <outlet property="labelTimer" destination="Ftm-BU-TpB" id="ldZ-W0-5QG"/>
                 <outlet property="scoreLabel" destination="fI2-4e-Uxq" id="stV-6H-l02"/>
@@ -69,48 +55,6 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </label>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="ykF-5R-9Yc">
-                    <rect key="frame" x="240" y="295" width="52" height="52"/>
-                </imageView>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="0jM-6b-1hu">
-                    <rect key="frame" x="224" y="151" width="52" height="52"/>
-                </imageView>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dlo-9x-BHy">
-                    <rect key="frame" x="194" y="363" width="52" height="52"/>
-                </imageView>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="CtJ-6p-zLt">
-                    <rect key="frame" x="23" y="-22" width="52" height="52"/>
-                </imageView>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hsg-dp-PKz">
-                    <rect key="frame" x="35" y="470" width="52" height="52"/>
-                </imageView>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="4ay-ae-qe8">
-                    <rect key="frame" x="4" y="381" width="52" height="52"/>
-                </imageView>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="bDx-9q-nxg">
-                    <rect key="frame" x="-15" y="188" width="52" height="52"/>
-                </imageView>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="UJL-rP-2vr">
-                    <rect key="frame" x="134" y="404" width="52" height="52"/>
-                </imageView>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="qYJ-gz-VhE">
-                    <rect key="frame" x="35" y="83" width="52" height="52"/>
-                </imageView>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="me3-4P-GJD">
-                    <rect key="frame" x="248" y="456" width="52" height="52"/>
-                </imageView>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Xc-vh-P3C">
-                    <rect key="frame" x="100" y="131" width="52" height="52"/>
-                </imageView>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="1hk-Bo-e2Y">
-                    <rect key="frame" x="283" y="260" width="52" height="52"/>
-                </imageView>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="uxx-uS-sKk">
-                    <rect key="frame" x="58" y="317" width="52" height="52"/>
-                </imageView>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="y60-1p-aUr">
-                    <rect key="frame" x="173" y="-14" width="52" height="52"/>
-                </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bag: $10.25" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kux-UN-Kv5">
                     <rect key="frame" x="195" y="46" width="114" height="40"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

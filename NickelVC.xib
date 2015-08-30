@@ -6,21 +6,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NickelVC">
             <connections>
-                <outlet property="dollarSign1" destination="vaA-Ln-f1w" id="v7V-lg-hMV"/>
-                <outlet property="dollarSign10" destination="GLy-rw-0Ye" id="77i-RS-66D"/>
-                <outlet property="dollarSign11" destination="vhf-5b-b6H" id="NV1-a7-tKN"/>
-                <outlet property="dollarSign12" destination="bp1-Ll-mj8" id="0RL-fs-QLC"/>
-                <outlet property="dollarSign13" destination="aH0-cM-fD6" id="Amx-n9-hGO"/>
-                <outlet property="dollarSign14" destination="8Kc-pL-1rQ" id="aOa-ga-nmc"/>
-                <outlet property="dollarSign15" destination="Mwi-qP-sFk" id="Gbs-Ez-WTP"/>
-                <outlet property="dollarSign2" destination="F6w-Cl-I0p" id="eyB-Sq-mhc"/>
-                <outlet property="dollarSign3" destination="Cve-nL-Kj6" id="qNX-nk-WHG"/>
-                <outlet property="dollarSign4" destination="abl-kW-mRK" id="pwe-HL-DuR"/>
-                <outlet property="dollarSign5" destination="DIQ-p1-FEP" id="iS4-3c-vKz"/>
-                <outlet property="dollarSign6" destination="jzU-Hg-dAq" id="hnD-BA-a4L"/>
-                <outlet property="dollarSign7" destination="qug-H3-39K" id="SxG-Ep-Wi6"/>
-                <outlet property="dollarSign8" destination="kAD-QU-Sd9" id="cQo-op-IdV"/>
-                <outlet property="dollarSign9" destination="b8q-Vg-h9a" id="tje-Xu-enG"/>
                 <outlet property="labelGoal" destination="U3k-sz-tu1" id="CrO-tU-4jn"/>
                 <outlet property="labelTimer" destination="SWZ-i3-w2U" id="ssc-OA-pid"/>
                 <outlet property="scoreLabel" destination="bQ3-EI-hJQ" id="mTG-QV-1OC"/>
@@ -39,8 +24,8 @@
                     <rect key="frame" x="9" y="46" width="114" height="40"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="40" id="3uZ-Ax-BEG"/>
-                        <constraint firstAttribute="width" constant="114" id="7iM-wr-8tm"/>
+                        <constraint firstAttribute="height" constant="40" id="CiR-Ut-cpn"/>
+                        <constraint firstAttribute="width" constant="114" id="Dp5-oY-tMA"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -56,8 +41,8 @@
                     <rect key="frame" x="134" y="35" width="52" height="62"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="52" id="0FA-Tb-4p3"/>
-                        <constraint firstAttribute="height" constant="62" id="UI6-8h-uFL"/>
+                        <constraint firstAttribute="width" constant="52" id="BKb-J3-Blt"/>
+                        <constraint firstAttribute="height" constant="62" id="uhL-fT-xOy"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="32"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -69,54 +54,12 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </label>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="vaA-Ln-f1w">
-                    <rect key="frame" x="31" y="88" width="52" height="52"/>
-                </imageView>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="F6w-Cl-I0p">
-                    <rect key="frame" x="220" y="156" width="52" height="52"/>
-                </imageView>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="abl-kW-mRK">
-                    <rect key="frame" x="54" y="322" width="52" height="52"/>
-                </imageView>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="DIQ-p1-FEP">
-                    <rect key="frame" x="156" y="8" width="52" height="52"/>
-                </imageView>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="jzU-Hg-dAq">
-                    <rect key="frame" x="96" y="136" width="52" height="52"/>
-                </imageView>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="qug-H3-39K">
-                    <rect key="frame" x="-19" y="193" width="52" height="52"/>
-                </imageView>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="b8q-Vg-h9a">
-                    <rect key="frame" x="190" y="368" width="52" height="52"/>
-                </imageView>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="GLy-rw-0Ye">
-                    <rect key="frame" x="279" y="265" width="52" height="52"/>
-                </imageView>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="vhf-5b-b6H">
-                    <rect key="frame" x="31" y="475" width="52" height="52"/>
-                </imageView>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="bp1-Ll-mj8">
-                    <rect key="frame" x="0.0" y="386" width="52" height="52"/>
-                </imageView>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="aH0-cM-fD6">
-                    <rect key="frame" x="130" y="409" width="52" height="52"/>
-                </imageView>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="8Kc-pL-1rQ">
-                    <rect key="frame" x="244" y="461" width="52" height="52"/>
-                </imageView>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mwi-qP-sFk">
-                    <rect key="frame" x="260" y="337" width="52" height="52"/>
-                </imageView>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="Cve-nL-Kj6">
-                    <rect key="frame" x="19" y="-17" width="52" height="52"/>
-                </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3k-sz-tu1">
                     <rect key="frame" x="195" y="46" width="114" height="40"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="40" id="U7a-2g-6jk"/>
-                        <constraint firstAttribute="width" constant="114" id="aFz-7G-KXA"/>
+                        <constraint firstAttribute="width" constant="114" id="8ZA-33-hdA"/>
+                        <constraint firstAttribute="height" constant="40" id="hIa-kq-7OM"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                     <nil key="highlightedColor"/>
@@ -133,14 +76,11 @@
                         <outlet property="delegate" destination="-1" id="QdT-jj-qLD"/>
                     </connections>
                 </adBannerView>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="kAD-QU-Sd9">
-                    <rect key="frame" x="169" y="105" width="52" height="52"/>
-                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bp-tH-WFU">
                     <rect key="frame" x="87" y="210" width="147" height="147"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="147" id="mYj-P1-OPC"/>
-                        <constraint firstAttribute="width" constant="147" id="rKj-VA-gn5"/>
+                        <constraint firstAttribute="height" constant="147" id="Nr9-2L-lhi"/>
+                        <constraint firstAttribute="width" constant="147" id="olI-xW-NeL"/>
                     </constraints>
                     <state key="normal" image="nickel_front.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -154,8 +94,8 @@
                     <rect key="frame" x="72" y="452" width="176" height="43"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="176" id="JOa-Q1-kRE"/>
-                        <constraint firstAttribute="height" constant="43" id="pn9-Lm-dZ0"/>
+                        <constraint firstAttribute="height" constant="43" id="bjj-uo-2rd"/>
+                        <constraint firstAttribute="width" constant="176" id="qF9-nI-vTp"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -169,25 +109,23 @@
                 </label>
             </subviews>
             <constraints>
-                <constraint firstAttribute="centerX" secondItem="bQ3-EI-hJQ" secondAttribute="centerX" id="5ue-Jx-o1M"/>
-                <constraint firstAttribute="centerY" secondItem="3bp-tH-WFU" secondAttribute="centerY" id="BDz-XT-ZfG"/>
-                <constraint firstItem="bM2-cn-miI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="H9R-qf-Znn"/>
-                <constraint firstItem="SWZ-i3-w2U" firstAttribute="centerY" secondItem="U3k-sz-tu1" secondAttribute="centerY" id="IBQ-1v-htL"/>
-                <constraint firstAttribute="trailing" secondItem="bM2-cn-miI" secondAttribute="trailing" id="JLJ-Iz-JFT"/>
-                <constraint firstItem="uqH-2Y-RJt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="K6J-zi-bvh"/>
-                <constraint firstAttribute="bottom" secondItem="uqH-2Y-RJt" secondAttribute="bottom" id="KuO-6R-RmT"/>
-                <constraint firstItem="SWZ-i3-w2U" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="35" id="NOH-KK-wCg"/>
-                <constraint firstItem="SWZ-i3-w2U" firstAttribute="centerY" secondItem="2cx-aS-4z1" secondAttribute="centerY" id="Suq-QH-VrP"/>
-                <constraint firstItem="bM2-cn-miI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TtW-yk-Jml"/>
-                <constraint firstAttribute="centerX" secondItem="SWZ-i3-w2U" secondAttribute="centerX" id="aff-eu-dQc"/>
-                <constraint firstAttribute="centerX" secondItem="3bp-tH-WFU" secondAttribute="centerX" id="jUU-pv-b9d"/>
-                <constraint firstAttribute="trailing" secondItem="uqH-2Y-RJt" secondAttribute="trailing" id="k5D-vJ-ogk"/>
-                <constraint firstItem="2cx-aS-4z1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="9" id="mnX-UO-htn"/>
-                <constraint firstItem="uqH-2Y-RJt" firstAttribute="top" secondItem="bQ3-EI-hJQ" secondAttribute="bottom" constant="23" id="pji-Zk-rCb"/>
-                <constraint firstAttribute="trailing" secondItem="U3k-sz-tu1" secondAttribute="trailing" constant="11" id="uiw-AJ-5cM"/>
-                <constraint firstAttribute="bottom" secondItem="bM2-cn-miI" secondAttribute="bottom" id="wfk-A7-cmx"/>
-                <constraint firstItem="U3k-sz-tu1" firstAttribute="leading" secondItem="SWZ-i3-w2U" secondAttribute="trailing" constant="9" id="yAP-ga-okd"/>
-                <constraint firstItem="SWZ-i3-w2U" firstAttribute="leading" secondItem="2cx-aS-4z1" secondAttribute="trailing" constant="11" id="yOc-XH-SMJ"/>
+                <constraint firstAttribute="centerX" secondItem="3bp-tH-WFU" secondAttribute="centerX" id="09x-ga-Elk"/>
+                <constraint firstAttribute="bottom" secondItem="bM2-cn-miI" secondAttribute="bottom" id="9qb-9e-lNL"/>
+                <constraint firstAttribute="centerX" secondItem="bQ3-EI-hJQ" secondAttribute="centerX" id="AFR-o6-wEn"/>
+                <constraint firstItem="uqH-2Y-RJt" firstAttribute="top" secondItem="bQ3-EI-hJQ" secondAttribute="bottom" constant="23" id="BCR-Bw-MvE"/>
+                <constraint firstItem="SWZ-i3-w2U" firstAttribute="centerX" secondItem="bQ3-EI-hJQ" secondAttribute="centerX" id="Co6-yx-CTb"/>
+                <constraint firstItem="SWZ-i3-w2U" firstAttribute="centerY" secondItem="2cx-aS-4z1" secondAttribute="centerY" id="DKk-wX-ngk"/>
+                <constraint firstItem="bM2-cn-miI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="E4m-ot-7K3"/>
+                <constraint firstAttribute="bottom" secondItem="uqH-2Y-RJt" secondAttribute="bottom" id="MuQ-za-LMy"/>
+                <constraint firstItem="SWZ-i3-w2U" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="35" id="OEw-Fx-1LX"/>
+                <constraint firstItem="U3k-sz-tu1" firstAttribute="centerY" secondItem="SWZ-i3-w2U" secondAttribute="centerY" id="OOI-3V-30A"/>
+                <constraint firstItem="bM2-cn-miI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Pps-rB-2yF"/>
+                <constraint firstAttribute="trailing" secondItem="bM2-cn-miI" secondAttribute="trailing" id="bAo-mH-vZb"/>
+                <constraint firstItem="SWZ-i3-w2U" firstAttribute="leading" secondItem="2cx-aS-4z1" secondAttribute="trailing" constant="11" id="fTg-qI-S2q"/>
+                <constraint firstItem="uqH-2Y-RJt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gZZ-8u-wTz"/>
+                <constraint firstItem="U3k-sz-tu1" firstAttribute="leading" secondItem="SWZ-i3-w2U" secondAttribute="trailing" constant="9" id="k2B-3B-5wa"/>
+                <constraint firstAttribute="centerY" secondItem="3bp-tH-WFU" secondAttribute="centerY" id="wxV-1a-HYl"/>
+                <constraint firstAttribute="trailing" secondItem="uqH-2Y-RJt" secondAttribute="trailing" id="xPj-cJ-Xg0"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
@@ -199,7 +137,6 @@
         <image name="Nickel_back.png" width="300" height="300"/>
         <image name="myBackground.png" width="640" height="1136"/>
         <image name="nickel_front.png" width="1136" height="1150"/>
-        <image name="sign_dollar.png" width="512" height="512"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
