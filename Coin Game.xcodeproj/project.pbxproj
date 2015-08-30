@@ -35,7 +35,6 @@
 		D034E12F1AEDCA6F00731450 /* quarter_front.png in Resources */ = {isa = PBXBuildFile; fileRef = D034E1231AEDCA6F00731450 /* quarter_front.png */; };
 		D034E1331AEDCF6000731450 /* FailurePage.m in Sources */ = {isa = PBXBuildFile; fileRef = D034E1311AEDCF6000731450 /* FailurePage.m */; };
 		D034E1341AEDCF6000731450 /* FailurePage.xib in Resources */ = {isa = PBXBuildFile; fileRef = D034E1321AEDCF6000731450 /* FailurePage.xib */; };
-		D044D0081B3F517300934060 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D044D0071B3F517300934060 /* GameKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D05399C11AF101A40057BE83 /* OneDollar.m in Sources */ = {isa = PBXBuildFile; fileRef = D05399BF1AF101A40057BE83 /* OneDollar.m */; };
 		D05399C21AF101A40057BE83 /* OneDollar.xib in Resources */ = {isa = PBXBuildFile; fileRef = D05399C01AF101A40057BE83 /* OneDollar.xib */; };
 		D05399C61AF103B10057BE83 /* VictoryPage.m in Sources */ = {isa = PBXBuildFile; fileRef = D05399C41AF103B10057BE83 /* VictoryPage.m */; };
@@ -111,7 +110,6 @@
 		D034E1301AEDCF6000731450 /* FailurePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FailurePage.h; sourceTree = "<group>"; };
 		D034E1311AEDCF6000731450 /* FailurePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FailurePage.m; sourceTree = "<group>"; };
 		D034E1321AEDCF6000731450 /* FailurePage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FailurePage.xib; sourceTree = "<group>"; };
-		D044D0071B3F517300934060 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		D05399BE1AF101A40057BE83 /* OneDollar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneDollar.h; sourceTree = "<group>"; };
 		D05399BF1AF101A40057BE83 /* OneDollar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneDollar.m; sourceTree = "<group>"; };
 		D05399C01AF101A40057BE83 /* OneDollar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OneDollar.xib; sourceTree = "<group>"; };
@@ -163,7 +161,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D044D0081B3F517300934060 /* GameKit.framework in Frameworks */,
 				D05639FE1B05A46900AFDAFB /* iAd.framework in Frameworks */,
 				D02E3E2E1AF0324400AC90CE /* AudioToolbox.framework in Frameworks */,
 			);
@@ -207,13 +204,6 @@
 				D02E3E3A1AF040FD00AC90CE /* HalfDollarVC.xib */,
 			);
 			name = "Half Dollar";
-			sourceTree = "<group>";
-		};
-		D02E3E431AF078B800AC90CE /* Info Page */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Info Page";
 			sourceTree = "<group>";
 		};
 		D05399C81AF109480057BE83 /* One Dollar */ = {
@@ -269,10 +259,8 @@
 		D09C80481AEA77DC0058717B = {
 			isa = PBXGroup;
 			children = (
-				D044D0071B3F517300934060 /* GameKit.framework */,
 				D05639FD1B05A46900AFDAFB /* iAd.framework */,
 				D02E3E2D1AF0324400AC90CE /* AudioToolbox.framework */,
-				D02E3E431AF078B800AC90CE /* Info Page */,
 				D05399C91AF109560057BE83 /* Victory Page */,
 				D02E3E311AF0399E00AC90CE /* FailurePage */,
 				D0F11E2C1B3CF9FF008D1BD0 /* Five Dollar */,
@@ -446,6 +434,12 @@
 				TargetAttributes = {
 					D09C80501AEA77DC0058717B = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = H2EKG79K44;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 0;
+							};
+						};
 					};
 					D09C80691AEA77DC0058717B = {
 						CreatedOnToolsVersion = 6.3;

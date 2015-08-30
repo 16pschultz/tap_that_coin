@@ -53,35 +53,4 @@
 @property (nonatomic, assign) int animationTimer;
 
 
-
-@property (nonatomic, assign) IBOutlet UIImageView* dollarSign1;
-
-@property (nonatomic, assign) IBOutlet UIImageView* dollarSign2;
-
-@property (nonatomic, assign) IBOutlet UIImageView* dollarSign3;
-
-@property (nonatomic, assign) IBOutlet UIImageView* dollarSign4;
-
-@property (nonatomic, assign) IBOutlet UIImageView* dollarSign5;
-
-@property (nonatomic, assign) IBOutlet UIImageView* dollarSign6;
-
-@property (nonatomic, assign) IBOutlet UIImageView* dollarSign7;
-
-@property (nonatomic, assign) IBOutlet UIImageView* dollarSign8;
-
-@property (nonatomic, assign) IBOutlet UIImageView* dollarSign9;
-
-@property (nonatomic, assign) IBOutlet UIImageView* dollarSign10;
-
-@property (nonatomic, assign) IBOutlet UIImageView* dollarSign11;
-
-@property (nonatomic, assign) IBOutlet UIImageView* dollarSign12;
-
-@property (nonatomic, assign) IBOutlet UIImageView* dollarSign13;
-
-@property (nonatomic, assign) IBOutlet UIImageView* dollarSign14;
-
-@property (nonatomic, assign) IBOutlet UIImageView* dollarSign15;
-
 @end
