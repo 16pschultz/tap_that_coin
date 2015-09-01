@@ -10,67 +10,37 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="myBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="1GM-ni-PtH">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="1GM-ni-PtH">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="JHi-AK-g5a">
-                    <rect key="frame" x="14" y="256" width="52" height="52"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="QJF-yO-3FF">
-                    <rect key="frame" x="51" y="449" width="52" height="52"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="la0-TZ-LPf">
-                    <rect key="frame" x="330" y="328" width="52" height="52"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ame-Cd-wWs">
-                    <rect key="frame" x="362" y="449" width="52" height="52"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="dn8-tX-P8b">
-                    <rect key="frame" x="271" y="219" width="52" height="52"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="l5b-iB-bBi">
-                    <rect key="frame" x="82" y="538" width="52" height="52"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="xB8-O9-H0N">
-                    <rect key="frame" x="278" y="449" width="52" height="52"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="QNh-Gm-PEN">
-                    <rect key="frame" x="303" y="117" width="52" height="52"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="BtO-z3-Qth">
-                    <rect key="frame" x="82" y="151" width="52" height="52"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="qqS-N0-C69">
-                    <rect key="frame" x="181" y="472" width="52" height="52"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="mtP-ui-cMI">
-                    <rect key="frame" x="208" y="564" width="52" height="52"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qlf-eA-O0J">
-                    <rect key="frame" x="70" y="46" width="52" height="52"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="nqr-bA-1BS">
-                    <rect key="frame" x="225" y="58" width="52" height="52"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mjj-1m-Y5p">
-                    <rect key="frame" x="295" y="524" width="52" height="52"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign_dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dgk-6N-jDy">
-                    <rect key="frame" x="161" y="128" width="52" height="52"/>
-                </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nickel_front.png" translatesAutoresizingMaskIntoConstraints="NO" id="kNM-zo-0nY">
-                    <rect key="frame" x="65" y="211" width="245" height="245"/>
+                    <rect key="frame" x="87" y="234" width="200" height="200"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="245" id="cT5-sF-vgC"/>
+                        <constraint firstAttribute="width" constant="200" id="kOc-PV-rPx"/>
+                        <constraint firstAttribute="height" constant="200" id="q5y-OQ-q6D"/>
                         <constraint firstAttribute="height" constant="245" id="wIz-DS-Qbw"/>
                     </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="cT5-sF-vgC"/>
+                            <exclude reference="wIz-DS-Qbw"/>
+                        </mask>
+                    </variation>
                 </imageView>
             </subviews>
             <constraints>
                 <constraint firstAttribute="centerY" secondItem="kNM-zo-0nY" secondAttribute="centerY" id="8Zy-HS-0bs"/>
+                <constraint firstItem="1GM-ni-PtH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="PZS-GV-79a"/>
+                <constraint firstAttribute="trailing" secondItem="1GM-ni-PtH" secondAttribute="trailing" id="cFl-SL-Oc7"/>
                 <constraint firstAttribute="centerX" secondItem="kNM-zo-0nY" secondAttribute="centerX" id="ch3-Cg-QRp"/>
+                <constraint firstItem="1GM-ni-PtH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fSd-4V-upn"/>
+                <constraint firstAttribute="bottom" secondItem="1GM-ni-PtH" secondAttribute="bottom" id="smm-bW-a1j"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <point key="canvasLocation" x="547.5" y="454.5"/>
         </view>
@@ -78,6 +48,5 @@
     <resources>
         <image name="myBackground.png" width="640" height="1136"/>
         <image name="nickel_front.png" width="1136" height="1150"/>
-        <image name="sign_dollar.png" width="512" height="512"/>
     </resources>
 </document>

@@ -30,12 +30,6 @@
     NSURL *buttonUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Coin Sound" ofType:@"mp3"]];
     
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)buttonUrl, &SoundID);
-    
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
@@ -44,10 +38,9 @@
     self.countdownTimer -= 1;
     labelTimer.text = [NSString stringWithFormat:@"%i", self.countdownTimer];
     
-    
     if (self.countdownTimer < 0) {
         //If user pressed on iAd during app, the timer keeps running and goes into negatives.
-        //If the timer reaches 0 while the user is in iAd, the app opens up the Failure Page with no animation
+        //If the timer reaches 0 or is less than 0 while the user is in iAd, the app opens up the Failure Page with no animation
         
         FailurePage *failurePage = [[FailurePage alloc] init];
         
@@ -57,7 +50,6 @@
         failurePage.stringImage = @"nickel_front.png";
         
         [self presentViewController:failurePage animated:NO completion:nil];
-        
     }
     
     
@@ -71,7 +63,6 @@
             self.highScoreInt = self.scoreInt;
             [[NSUserDefaults standardUserDefaults] setInteger:self.highScoreInt forKey:@"HighScore"];
             [[NSUserDefaults standardUserDefaults] synchronize];
-
         }
         
         
@@ -89,43 +80,31 @@
         
         //Launch Failure Page
         [self presentViewController:failurePage animated:YES completion:nil];
-
     }
-    
-    
 }
 
 
 -(void)bannerViewDidLoadAd:(ADBannerView *)banner {
     
-    
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:1];
     [banner setAlpha:1];
     [UIView commitAnimations];
-    
-    
 }
 
 
 -(void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error {
     
-    
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:1];
     [banner setAlpha:0];
     [UIView commitAnimations];
-    
-    if (error) {
-        nil;
-    }
 }
 
 
 - (IBAction)fiveDollarCoin {
     
     self.userMoney = self.userMoney + 5;
-    
     
     if (self.userMoney > 1000.00) {
 
@@ -135,13 +114,11 @@
         victoryPage.highScoreInt = self.scoreInt;
         
         [self presentViewController:victoryPage animated:YES completion:nil];
-
     }
     
     AudioServicesPlaySystemSound(SoundID);
     
     self.labelGoal.text = [NSString stringWithFormat:@"Bag: $%.2lf", self.userMoney];
-        
 }
 
 @end

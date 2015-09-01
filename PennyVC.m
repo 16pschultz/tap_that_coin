@@ -31,16 +31,6 @@
     
     NSURL *buttonUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Coin Sound" ofType:@"mp3"]];
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)buttonUrl, &SoundID);
- 
-//    while (example == 0) {
-//        [self randomizeMoneySignLocations];
-//    }
-    
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
@@ -58,7 +48,6 @@
     [arrowGoal startAnimating];
     
     timer2 = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(countdownForAnimation) userInfo:nil repeats:YES];
-
 }
 
 
@@ -113,7 +102,7 @@
     
     if (self.countdownTimer < 0) {
         //If user pressed on iAd during app, the timer keeps running and goes into negatives.
-        //If the timer reaches 0 while the user is in iAd, the app opens up the Failure Page with no animation
+        //If the timer reaches 0 or is less than 0 while the user is in iAd, the app opens up the Failure Page with no animation
         
         FailurePage *failurePage = [[FailurePage alloc] init];
         
@@ -154,38 +143,27 @@
 
         failurePage.highScoreInt = self.highScoreInt;
         
-//        failurePage.pennyButton.hidden = NO;
-
+        
         [self presentViewController:failurePage animated:YES completion:nil];
 
-    } else {
-        nil;
-    }
-    
-    
+    } 
 }
 
 -(void)bannerViewDidLoadAd:(ADBannerView *)banner {
-    
     
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:1];
     [banner setAlpha:1];
     [UIView commitAnimations];
-    
-    
 }
 
 
 -(void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error {
     
-    
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:1];
     [banner setAlpha:0];
     [UIView commitAnimations];
-    
-    
 }
 
 

@@ -25,7 +25,6 @@
 
     [[NSUserDefaults standardUserDefaults] setDouble:self.userMoney forKey:@"UserBestBag"];
     [[NSUserDefaults standardUserDefaults] synchronize];
-
 }
 
 - (void) viewWillAppear:(BOOL)animated {
@@ -42,21 +41,13 @@
     
     
     self.currentBagLabel.text = [NSString stringWithFormat:@"$%.2lf", self.userCurrentBag];
-
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 
 
 - (IBAction)playAgainButton {
     
     PennyVC *pennyVC = [[PennyVC alloc] init];
     [self presentViewController:pennyVC animated:YES completion:NULL];
-    
 }
 
 @end

@@ -26,24 +26,17 @@
     
     self.labelGoal.text = [NSString stringWithFormat:@"Bag: $%.2lf", self.userMoney];
     
-    
     NSURL *buttonUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Coin Sound" ofType:@"mp3"]];
     
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)buttonUrl, &SoundID);
-
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 -(void)countdown {
     
     self.countdownTimer -= 1;
     labelTimer.text = [NSString stringWithFormat:@"%i", self.countdownTimer];
 
-    
     if (self.countdownTimer < 0) {
         //If user pressed on iAd during app, the timer keeps running and goes into negatives.
         //If the timer reaches 0 while the user is in iAd, the app opens up the Failure Page with no animation
@@ -56,10 +49,7 @@
         failurePage.stringImage = @"nickel_front.png";
         
         [self presentViewController:failurePage animated:NO completion:nil];
-
-        
     }
-    
     
     if (self.countdownTimer == 0) {
         FailurePage *failurePage = [[FailurePage alloc] init];
@@ -71,7 +61,6 @@
             self.highScoreInt = self.scoreInt;
             [[NSUserDefaults standardUserDefaults] setInteger:self.highScoreInt forKey:@"HighScore"];
             [[NSUserDefaults standardUserDefaults] synchronize];
-
         }
         
         
@@ -87,13 +76,9 @@
         
         failurePage.stringImage = @"2dollarCoinHead.png";
         
-        //failurePage.oneDollarButton.hidden = NO;
-        
         //Launch Failure Page
         [self presentViewController:failurePage animated:YES completion:nil];
-
     }
-    
 }
 
 
@@ -114,36 +99,28 @@
         
         //Launch Three Dollar Page
         [self presentViewController:threeDollar animated:YES completion:nil];
-        
     }
 
     AudioServicesPlaySystemSound(SoundID);
     
     self.labelGoal.text = [NSString stringWithFormat:@"Bag: $%.2lf", self.userMoney];
-        
 }
 
 -(void)bannerViewDidLoadAd:(ADBannerView *)banner {
-    
     
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:1];
     [banner setAlpha:1];
     [UIView commitAnimations];
-    
-    
 }
 
 
 -(void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error {
     
-    
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:1];
     [banner setAlpha:0];
     [UIView commitAnimations];
-    
-    
 }
 
 @end
