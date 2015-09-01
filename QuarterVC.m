@@ -25,18 +25,9 @@
     self.scoreLabel.text = [NSString stringWithFormat:@"Score:          %i", self.scoreInt];
     
     self.labelGoal.text = [NSString stringWithFormat:@"Bag: $%.2lf", self.userMoney];
-
-    
     
     NSURL *buttonUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Coin Sound" ofType:@"mp3"]];
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)buttonUrl, &SoundID);
-
-    
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
@@ -47,7 +38,7 @@
     
     if (self.countdownTimer < 0) {
         //If user pressed on iAd during app, the timer keeps running and goes into negatives.
-        //If the timer reaches 0 while the user is in iAd, the app opens up the Failure Page with no animation
+        //If the timer reaches 0 or is less than 0 while the user is in iAd, the app opens up the Failure Page with no animation
         
         FailurePage *failurePage = [[FailurePage alloc] init];
         
@@ -57,7 +48,6 @@
         failurePage.stringImage = @"nickel_front.png";
         
         [self presentViewController:failurePage animated:NO completion:nil];
-        
     }
     
     if (self.countdownTimer == 0) {
@@ -71,7 +61,6 @@
             self.highScoreInt = self.scoreInt;
             [[NSUserDefaults standardUserDefaults] setInteger:self.highScoreInt forKey:@"HighScore"];
             [[NSUserDefaults standardUserDefaults] synchronize];
-
         }
         
         
@@ -87,24 +76,15 @@
 
         failurePage.stringImage = @"quarter_front.png";
 
-        
-//        failurePage.quarterButton.hidden= NO;
-        
         [self presentViewController:failurePage animated:YES completion:nil];
-
     }
-    
-    
 }
-
-
 
 - (IBAction)quarterButton {
     
     self.userMoney = self.userMoney + 0.25;
     
     if (self.userMoney > 14.75) {
-        //lk
 
         HalfDollarVC *halfdollarVC = [[HalfDollarVC alloc] init];
         halfdollarVC.countdownTimer = self.countdownTimer + 5;
@@ -116,36 +96,28 @@
         
         //Launch Half Dollar
         [self presentViewController:halfdollarVC animated:YES completion:nil];
-        
     }
     
     AudioServicesPlaySystemSound(SoundID);
     
     self.labelGoal.text = [NSString stringWithFormat:@"Bag: $%.2lf", self.userMoney];
-    
 }
 
 -(void)bannerViewDidLoadAd:(ADBannerView *)banner {
-    
     
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:1];
     [banner setAlpha:1];
     [UIView commitAnimations];
-    
-    
 }
 
 
 -(void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error {
     
-    
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:1];
     [banner setAlpha:0];
-    [UIView commitAnimations];
-    
-    
+    [UIView commitAnimations];    
 }
 
 @end

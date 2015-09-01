@@ -20,11 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-
     self.imageFailure1.image = [UIImage imageNamed:self.stringImage];
 
     self.scoreLabel.text = [NSString stringWithFormat:@"%i", self.scoreInt];
-    
     
     
     self.lastHighScore = [[NSUserDefaults standardUserDefaults] integerForKey:@"HighScore"];
@@ -39,26 +37,6 @@
     
     
     self.currentBagLabel.text = [NSString stringWithFormat:@"$%.2lf", self.userCurrentBag];
-    
-}
- 
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-
-}
-
-
-- (void)viewDidAppear:(BOOL)animated {
-    
-//    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
-
-
-}
-
--(void)viewWillAppear:(BOOL)animated {
-    
 }
 
 
@@ -69,10 +47,7 @@
     pennyVC.highScoreInt = self.highScoreInt;
 
     [self presentViewController:pennyVC animated:YES completion:NULL];
-    
 }
-
-
 
 
 @end

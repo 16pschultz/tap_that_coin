@@ -154,7 +154,7 @@
                         <constraint firstAttribute="width" constant="217" id="qgs-Lr-eQr"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
-                    <state key="normal" title="Play Again!">
+                    <state key="normal" title="Tails never Fails!">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
